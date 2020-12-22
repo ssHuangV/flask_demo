@@ -23,6 +23,8 @@ from settings import Config
 
 lock = Lock()
 
+def loop_task():
+    print('loop_task')
 
 # 移除
 def remove_task(id):

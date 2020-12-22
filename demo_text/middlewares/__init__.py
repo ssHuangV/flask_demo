@@ -36,11 +36,11 @@ class MiddlewareManger(object):
 
                 try:
                     token = request.headers.get('speepertoken')
-                    if not token:
-                        raise APIException(msg='没有登录', error_code=100008, status_code=200)
-                    user = User.verify_user_token(token)
-                    if not user:
-                        raise APIException(msg='没有登录', error_code=100008, status_code=200)
+                    # if not token:
+                    #     raise APIException(msg='没有登录', error_code=100008, status_code=200)
+                    # user = User.verify_user_token(token)
+                    # if not user:
+                    #     raise APIException(msg='没有登录', error_code=100008, status_code=200)
 
                 except Exception as e:
                     current_app.logger.error(e)

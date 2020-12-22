@@ -8,4 +8,5 @@ from demo_text.utils.response import Response
 
 @taskmode_blue.route('/taskss/test/', methods=['GET'])
 def task_test():
+    print('////////////////////////////////////////')
     return Response.success()

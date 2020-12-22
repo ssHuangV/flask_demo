@@ -48,5 +48,13 @@ def create_app():
     def index():
         return Response.success(Config.APP_NAME)
 
+    from demo_text.controllers import (
+        taskmode_blue
+    )
+    API_PREFIX = '/api'
+    app.register_blueprint(taskmode_blue, url_prefix=API_PREFIX)
 
     return app
+
+
+__all__ = ['db', 'redis_store', 'create_app']

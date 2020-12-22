@@ -87,6 +87,7 @@ PERMANENT_SESSION_LIFETIME: 86400
 # SESSION_TYPE: redis
 ### http server config
 HTTP_PORT: 9090
+HTTP_HOST: 127.0.0.1
 
 """
 
