@@ -1,0 +1,13 @@
+flask==1.1.1
+flask-apscheduler==1.11.0
+flask-session==0.3.1
+flask-sqlalchemy==2.4.1
+flask-socketio==4.2.1
+flask-cors==3.0.8
+redis==3.4.1
+pymysql==0.9.3
+pyyaml==5.3
+requests==2.23.0
+paho-mqtt==1.5.0
+flask-wtf==0.14.3
+demjson==2.2.4

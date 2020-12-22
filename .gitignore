@@ -1,0 +1,11 @@
+*.idea
+*.idea/
+.DS_Store
+__pycache__/
+*.pyc
+*/__pycache__/
+uwsgi.*
+.vscode
+.idea
+venv/
+logs

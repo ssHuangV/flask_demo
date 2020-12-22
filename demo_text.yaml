@@ -1,0 +1,44 @@
+# the default config of demo_text system
+# app config
+APP_ENV: dev
+APP_NAME: demo_text
+DEBUG: False
+# log setting config
+LOG_BASE_PATH: /tmp/demo_text
+LOG_LEVEL: error
+LOG_SIZE: 50
+LOG_COUNT: 2
+LOG_MANAGER_CONFIG:
+    LOG_HANDLERS:
+        - name: system_log
+          file: 'demo_text/autopilot_{time:YYYY-MM-DD}.log'
+          filter: system
+          options:
+            retention: '30 days'
+            format: '{time:X}|{message}'
+# database config
+DATABASE:
+    DEFAULT:
+        USER: root
+        PASSWORD: 123456
+        HOST: 127.0.0.1
+        PORT: 3306
+        DATABASE: demo_text
+    MASTER:
+        USER: root
+        PASSWORD: 123456
+        HOST: 127.0.0.1
+        PORT: 3306
+        DATABASE: demo_text
+# redis config
+REDIS_HOST: 127.0.0.1
+REDIS_PORT: 6379
+REDIS_DB: 6
+REDIS_CLUSTER_FLAG: False
+EXPIRATION: 86400
+APP_EXPIRATION: 604800
+PERMANENT_SESSION_LIFETIME: 86400
+# SESSION_TYPE: redis
+### http server config
+HTTP_PORT: 9090
+
